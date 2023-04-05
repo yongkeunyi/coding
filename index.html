@@ -8,7 +8,23 @@
   src="https://code.jquery.com/jquery-3.6.4.js"
   integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
   crossorigin="anonymous"></script>
-  
+  <scrip>
+    
+    $("#loadData").click(function() {
+  $.ajax({
+    method:"POST",
+    url:"some.php"
+    data:{name:"Hohn", location:"Boston"}
+    })
+    .,done(function(msg){
+    alert(Data Saved:"+msg);
+    });
+    
+   
+
+    
+     </script>
+</body>
   <!-- 외부 JavaScript 파일을 불러오는 경우 -->
   <!--<script src="your_script.js"></script>-->
 </head>
