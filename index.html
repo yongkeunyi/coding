@@ -10,10 +10,10 @@
   
   <scrip>
     
-    $("#loadData").click(function() {
+   
   $.ajax({
-    method:"tet",
-    url:"https://dapi.kakao.com/v3/search/book?target=titlesome.php"
+    method:"get",
+    url:"https://dapi.kakao.com/v3/search/book?target=title",
     data:{query:"미움받을 용기"},
     headers:{Authorization:"KakaoAK 88874c63a385df43eca0e533b114fa9d"}
     })
