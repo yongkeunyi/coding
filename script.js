@@ -11,3 +11,17 @@ window.onload = function() {
         alert("인적사항이 제출되었습니다.");
     });
 };
+
+document.getElementById("submitBtn").addEventListener("click", function(event) {
+  event.preventDefault();
+
+  let name = document.getElementById("name").value;
+  let age = document.getElementById("age").value;
+  let email = document.getElementById("email").value;
+  let phone = document.getElementById("phone").value;
+
+  console.log("Name:", name);
+  console.log("Age:", age);
+  console.log("Email:", email);
+  console.log("Phone:", phone);
+});
