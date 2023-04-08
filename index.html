@@ -1,78 +1,26 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <title>유튜브 동영상 표</title>
-  <style>
-    table {
-      width: 100%;
-      border-collapse: collapse;
-    }
-    th, td {
-      border: 1px solid black;
-      padding: 15px;
-      text-align: center;
-    }
-    iframe {
-      width: 100%;
-      height: 315px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인적사항 입력</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-   <div class="table-title">이용근 교수의 여행의 기술</div>
-  <table>
-    <thead>
-      <tr>
-        <th>동영상 테스트용</th>
-        <th>동영상 2</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/WHgrb6zH2zc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>        </td>
-        <td>
-          <iframe src="https://www.youtube.com/embed/영상ID2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </td>
-      </tr>
-      <tr>
-        <th>동영상 3</th>
-        <th>동영상 4</th>
-      </tr>
-      <tr>
-        <td>
-          <iframe src="https://www.youtube.com/embed/영상ID3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </td>
-        <td>
-          <iframe src="https://www.youtube.com/embed/영상ID4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-  
-  <h1>🌍 남과 비교할 수 없는 나만의 경험을 위한 여행을 떠나보세요! ✈</h1>
-    <p>그리고 나만의 착각 속에서 내면의 메타버스 세계를 체험하고</p>
-    <p>챗 GPT를 활용하여 글을 써 보는 여행작가가 되어 보세요!</p>
-    <p>챗 GPT와 스마트폰과 함께 하는 포노사피엔스가 전세계를 돌아다니는 디지털노마드 여행작가로 변신할 수 있습니다.</p>
-
-    <h2>🌍 방향을 잃고 길을 헤메고 있는 당신! 삶을 창조하는 여행의 기술</h2>
-    <div class="book">
-        <a href="http://m.yes24.com/Goods/Detail/117310552">
-            <img src="http://image.yes24.com/goods/117310552/XL" alt="여행의 기술 책 표지">
-            <h3>여행의 기술</h3>
-            <p>이용근, 미네르바</p>
-        </a>
-    </div>
-
-    <h2>행복을 위한 여행인문학</h2>
-    <div class="book">
-        <a href="http://m.yes24.com/Goods/Detail/104799754">
-            <img src="http://image.yes24.com/momo/TopCate0005/kepub/L_1375835.jpg" alt="여행인문학 책 표지">
-            <h3>여행인문학</h3>
-            <p>이용근, 미네르바</p>
-        </a>
-  </div>
+    <h1>인적사항 입력</h1>
+    <form id="personalInfo">
+        <label for="name">이름:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for="email">이메일:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <label for="phone">전화번호:</label>
+        <input type="tel" id="phone" name="phone" required>
+        <br>
+        <button type="submit">제출하기</button>
+    </form>
+    <script src="scripts.js"></script>
 </body>
 </html>
+
