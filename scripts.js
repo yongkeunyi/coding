@@ -1,27 +1,20 @@
-window.onload = function() {
-    document.getElementById("personalInfo").addEventListener("submit", function (event) {
-        event.preventDefault();
 
-        const name = document.getElementById("name").value;
-        const email = document.getElementById("email").value;
-        const phone = document.getElementById("phone").value;
+function appendToDisplay(value) {
+    document.getElementById('display').value += value;
+}
 
-        console.log(`이름: ${name}\n이메일: ${email}\n전화번호: ${phone}`);
+function clearDisplay() {
+    document.getElementById('display').value = '';
+}
 
-        alert("인적사항이 제출되었습니다.");
-    });
-};
-
-document.getElementById("submitBtn").addEventListener("click", function(event) {
-  event.preventDefault();
-
-  let name = document.getElementById("name").value;
-  let age = document.getElementById("age").value;
-  let email = document.getElementById("email").value;
-  let phone = document.getElementById("phone").value;
-
-  console.log("Name:", name);
-  console.log("Age:", age);
-  console.log("Email:", email);
-  console.log("Phone:", phone);
-});
+function calculateResult() {
+    const display = document.getElementById('display');
+    try {
+        display.value = eval(display.value);
+    } catch (error) {
+        display.value = '오류';
+        setTimeout(() => {
+            clearDisplay();
+        }, 1500);
+    }
+}
